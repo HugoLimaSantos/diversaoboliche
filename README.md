@@ -1,6 +1,6 @@
-# OpenStrike
+# Diversão Boliche
 
-This is the website built for OpenStrike, a bowling and restaurant establishment.
+This is the template built for Diversão Boliche, a bowling and restaurant establishment.
 #
 
 
