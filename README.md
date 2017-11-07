@@ -1,8 +1,6 @@
-<img src="https://github.com/HugoLimaSantos/openstrike/blob/master/logo.jpeg" width="220">
-
 # OpenStrike
 
-This is the website built for OpenStrike, a bowling and restaurant establishment located at Hortolândia/SP - Brazil.
+This is the website built for OpenStrike, a bowling and restaurant establishment.
 #
 
 
