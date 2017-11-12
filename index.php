@@ -10,7 +10,7 @@
         <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style-portfolio.css"> <!-- cardapio -->
-        <link rel="stylesheet" href="css/picto-foundry-food.css" />
+        <link rel="stylesheet" href="css/picto-foundry-food.css" /> <!-- will be erased -->
         <link rel="stylesheet" href="css/jquery-ui.css"> <!--? -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet">
