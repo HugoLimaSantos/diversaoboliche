@@ -94,15 +94,27 @@
                             </ul><!-- @end #filter-list -->    
                             <ul id="portfolio">
                                 <li class="item breakfast"><img src="images/xegg.jpg" alt="Food" >
+                                    <div class="toggle_efect glyphicon glyphicon-menu-down">  X-Egg </div>
+                                    <div class="test_hid" >
                                     <p2>X-Egg</p2>
+                                    <p2>Hamburguer, Alface, Bacon, Tomates</p2>
+                                    </div>
                                 </li>
 
                                 <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Picanha </div>
+                                <div class="test_hid" >
                                     <p2>Picanha</p2>
+                                    <p2>Hamburguer, Alface</p2>
+                                    </div>
                                 </li>
                                 
-                                <li class="item dinner breakfast"><img src="images/xsalada.jpg" alt="Food" >
-                                    <p2>X-Salada</p2>
+                                <li class="item breakfast"><img src="images/xegg.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > </div>
+                                <div class="test_hid" >
+                                <p2>X-Salada</p2>
+                                <p2>Hamburguer, Alface, Bacon, Tomates</p2>
+                                </div>
                                 </li>
                                 
                                 <li class="item special"><img src="images/calabresa.jpg" alt="Food" >
@@ -253,7 +265,7 @@
             </div>
         </footer>
 
-
+        
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
         <script type="text/javascript" src="js/bootstrap.min.js" ></script>
         <script type="text/javascript" src="js/jquery-1.10.2.js"></script>     
