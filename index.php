@@ -96,50 +96,66 @@
                                 <li class="item breakfast"><img src="images/xegg.jpg" alt="Food" >
                                     <div class="toggle_efect glyphicon glyphicon-menu-down">  X-Egg </div>
                                     <div class="test_hid" >
-                                    <p2>X-Egg</p2>
-                                    <p2>Hamburguer, Alface, Bacon, Tomates</p2>
+                                    <p>Descrição</p>
                                     </div>
                                 </li>
 
                                 <li class="item special"><img src="images/picanha.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" > Picanha </div>
                                 <div class="test_hid" >
-                                    <p2>Picanha</p2>
-                                    <p2>Hamburguer, Alface</p2>
+                                    <p>Descrição</p>
                                     </div>
                                 </li>
                                 
-                                <li class="item breakfast"><img src="images/xegg.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > </div>
+                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > X-Salada </div>
                                 <div class="test_hid" >
-                                <p2>X-Salada</p2>
-                                <p2>Hamburguer, Alface, Bacon, Tomates</p2>
-                                </div>
+                                    <p>Descrição</p>
+                                    </div>
                                 </li>
                                 
-                                <li class="item special"><img src="images/calabresa.jpg" alt="Food" >
-                                    <p2>Calabresa</p2>
+                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Calabresa </div>
+                                <div class="test_hid" >
+                                    <p>Descrição</p>
+                                    </div>
                                 </li>                                
                                 
-                                <li class="item special"><img src="images/fritas.jpg" alt="Food" >
-                                    <p2>>Fritas</p2>
+                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Fritas </div>
+                                <div class="test_hid" >
+                                    <p>Descrição</p>
+                                    </div>
                                 </li>
                                 
-                                <li class="item desert"><img src="images/refri.jpg" alt="Food" >
-                                    <p2>Refrigerantes</p2>
+                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Refrigerantes </div>
+                                <div class="test_hid" >
+                                    <p>Descrição</p>
+                                    </div>
                                 </li>
                                 
-                                <li class="item desert"><img src="images/long.jpg" alt="Food" >
-                                    <p2>Cervejas</p2>
+                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Cervejas </div>
+                                <div class="test_hid" >
+                                    <p>Descrição</p>
+                                    </div>
                                 </li>
                                 
-                                <li class="item desert"><img src="images/sucos.jpg" alt="Food" >
-                                    <p2>Sucos</p2>
+                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Sucos </div>
+                                <div class="test_hid" >
+                                    <p>Descrição</p>
+                                    </div>
                                 </li>
                                 
-                                <li class="item breakfast"><img src="images/xtudo.jpg" alt="Food" >
-                                   <p2>X-Tudo</p2>
+                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" > X-Tudo </div>
+                                <div class="test_hid" >
+                                    <p>Descrição</p>
+                                    </div>
                                 </li>
+
                             </ul><!-- @end #portfolio -->
                         </div><!-- @end #w -->
                     </div>
