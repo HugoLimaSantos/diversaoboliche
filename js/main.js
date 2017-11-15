@@ -53,7 +53,7 @@
 				$(this).addClass("glyphicon glyphicon-menu-down");
 		}
 
-		$(this).toggleClass("active").next().slideToggle("slow");
+		$(this).toggleClass("active").next().slideToggle("fast");
 			
 					
 	});

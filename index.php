@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>OpenStrike</title>
+        <title>Diversao Boliche</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -30,7 +30,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">OpenStrike</a>
+                        <a class="navbar-brand" href="#">Diversao Boliche</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,70 +87,70 @@
                         </br>                        
                             <ul id="filter-list" class="clearfix">
                                 <li class="filter" data-filter="all">Favoritos</li>
-                                <li class="filter" data-filter="breakfast">Lanches</li>
+                                <li class="filter" data-filter="food">Lanches</li>
                                 <li class="filter" data-filter="special">Porções</li>
-                                <li class="filter" data-filter="desert">Bebidas</li>
+                                <li class="filter" data-filter="drink">Bebidas</li>
                                
                             </ul><!-- @end #filter-list -->    
                             <ul id="portfolio">
-                                <li class="item breakfast"><img src="images/xegg.jpg" alt="Food" >
-                                    <div class="toggle_efect glyphicon glyphicon-menu-down">  X-Egg </div>
+                                <li class="item food"><img src="images/xegg.jpg" alt="Food" >
+                                    <div class="toggle_efect glyphicon glyphicon-menu-down test">X-Egg </div>
                                     <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>
 
                                 <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Picanha </div>
+                                <div class="toggle_efect glyphicon glyphicon-menu-down">Picanha</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>
                                 
-                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > X-Salada </div>
+                                <li class="item food"><img src="images/xsalada.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" >X-Salada</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>
                                 
-                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Calabresa </div>
+                                <li class="item special"><img src="images/calabresa.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" >Calabresa</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>                                
                                 
-                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Fritas </div>
+                                <li class="item special"><img src="images/fritas.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" >Fritas</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>
                                 
-                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Refrigerantes </div>
+                                <li class="item drink"><img src="images/refri.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" >Refri</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>
                                 
-                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Cervejas </div>
+                                <li class="item drink"><img src="images/long.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" >Cervejas</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>
                                 
-                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > Sucos </div>
+                                <li class="item drink"><img src="images/sucos.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" >Sucos</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
                                 </li>
                                 
-                                <li class="item special"><img src="images/picanha.jpg" alt="Food" >
-                                <div class="toggle_efect glyphicon glyphicon-menu-down" > X-Tudo </div>
+                                <li class="item food"><img src="images/xtudo.jpg" alt="Food" >
+                                <div class="toggle_efect glyphicon glyphicon-menu-down" >X-Tudo</div>
                                 <div class="test_hid" >
                                     <p>Descrição</p>
                                     </div>
@@ -181,7 +181,7 @@
                     <h1>Galeria</h1>
                     <div class="icon-photo fa-2x"></div>
                     <p class="desc-text">Acompanhe nossa Galeria de Fotos, onde postamos os nossos melhores momentos.</p>
-                    <p class="desc-text">No OpenStrike, sua diversão garantida.</p>
+                    <p class="desc-text">No Diversao Boliche, sua diversão garantida.</p>
 		                
                 </div>
 
@@ -208,7 +208,7 @@
                                                     </div>
 
 				    <?php 
-
+                        
 					} else {
                     ?>		
 					                                <div class="item">
@@ -217,7 +217,7 @@
                                                     </div>
                     <?php  }
 
-                            $count++;                       
+                            $count++;                          
                     
                     }
                 ?>			
