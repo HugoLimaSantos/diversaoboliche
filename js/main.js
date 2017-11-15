@@ -44,7 +44,7 @@
 
 
 	$(".toggle_efect").click(function() {
-
+		// Replace class
 		if ($(this).hasClass("glyphicon-menu-down")) {
 			$(this).removeClass("glyphicon glyphicon-menu-down");
 			$(this).addClass("glyphicon glyphicon-menu-up");
