@@ -29,12 +29,3 @@ Team            |        Name   |    Email    | Role
 <img src="https://github.com/IBM-SMI-Brazil/smi-brazil-assistant/blob/master/images/gportog.png" width="120"> | [Gustavo Porto Guedes](https://www.linkedin.com/in/gustavo-porto-guedes/) | gustavoportoguedes@gmail.com | Developer
 <img src="https://github.com/HugoLimaSantos/openstrike/blob/master/team/team_photo/hugocris.png" width="120"> | [Hugo Cristiano Lima](https://www.linkedin.com/in/hugo-cristiano-lima-dos-santos-b27609b6/) | hugobass1981@hotmail.com | Developer
 
-<<<<<<< HEAD
-<img src="https://github.com/IBM-SMI-Brazil/smi-brazil-assistant/blob/master/images/gportog.png" width="120"> | [Flavio Antonio Da Silva](https://github.com/FlavioSilvaA) | fantonio@br.ibm.com | Developer
-<img src="https://github.com/IBM-SMI-Brazil/smi-brazil-assistant/blob/master/images/gportog.png" width="120"> | [Gustavo Porto Guedes](https://www.linkedin.com/in/gustavo-porto-guedes/) | gportog@br.ibm.com | Developer
-<img src="https://github.com/IBM-SMI-Brazil/smi-brazil-assistant/blob/master/images/hugocris.png" width="120"> | [Hugo Cristiano Lima](https://www.linkedin.com/in/hugo-cristiano-lima-dos-santos-b27609b6/) | hugocris@br.ibm.com | Developer
-# openstrike
-# openstrike
-# teste
-=======
->>>>>>> 10a3085be02cc3ca8b758f072b72a29bae7fcf3a
