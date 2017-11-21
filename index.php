@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Diversao Boliche</title>
+        <title>DiversãoBoliche</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -30,7 +30,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Diversao Boliche</a>
+                        <a class="navbar-brand" href="#">DiversãoBoliche</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,6 +40,7 @@
                             <li><a class="color_animation" href="#story">QUEM SOMOS</a></li>
                             <li><a class="color_animation" href="#pricing">CARDÁPIO</a></li>
                             <li><a class="color_animation" href="#featured">GALERIA</a></li>
+                            <li><a class="color_animation" href="#contato">CONTATO</a></li>
                             <li><a class="color_animation" href="#contact">LOCALIZAÇÃO</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -58,7 +59,7 @@
                 <div class="col-md-6">
                     <h1>Sobre nós</h1>
                            <br>
-                    <p class="desc-text">Descrição Open Strike</p>
+                    <p class="desc-text">Descrição Diversão Boliche</p>
                 </div>
                 <div class="col-md-6">
                     <div class="img-section">
@@ -71,7 +72,6 @@
                 </div>
             </div>
         </section>
-
 
        <!-- ============ Menu  ============= -->
 
@@ -167,9 +167,6 @@
             </br>
         </section>
 
-
-     
-
         
         <!-- ============ Featured Gallery  ============= -->
 
@@ -181,7 +178,7 @@
                     <h1>Galeria</h1>
                     <div class="icon-photo fa-2x"></div>
                     <p class="desc-text">Acompanhe nossa Galeria de Fotos, onde postamos os nossos melhores momentos.</p>
-                    <p class="desc-text">No Diversao Boliche, sua diversão garantida.</p>
+                    <p class="desc-text">No Diversão Boliche, sua diversão garantida.</p>
 		                
                 </div>
 
@@ -208,7 +205,7 @@
                                                     </div>
 
 				    <?php 
-                        
+
 					} else {
                     ?>		
 					                                <div class="item">
@@ -217,7 +214,7 @@
                                                     </div>
                     <?php  }
 
-                            $count++;                          
+                            $count++;                       
                     
                     }
                 ?>			
@@ -237,12 +234,14 @@
             </div>
         </section>
 
-       
+       <div class="space"></div>
 
         <!-- ============ Social Section  ============= -->
       
-        <section class="social_connect">
+        <section class="social_connect" id="contato">
+                
             <div class="text-content container"> 
+                    <h2 id="contato">CONTATO</h2>
                 <div class="col-md-6">
                     <span class="social_heading">SIGA</span>
                     <ul class="social_icons">
@@ -262,9 +261,10 @@
         <!-- ============ Contact Section  ============= -->
         
         <section id="contact">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1838.183397009771!2d-47.215621!3d-22.862905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc00393cd5c3%3A0x5a04b521d499d7d3!2sR.+Joaquim+Aparecido+Bueno+-+Lot.+Remanso+Campineiro%2C+Hortol%C3%A2ndia+-+SP!5e0!3m2!1sen!2sbr!4v1509906983615" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            <div class="space"></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1838.183397009771!2d-47.215621!3d-22.862905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc00393cd5c3%3A0x5a04b521d499d7d3!2sR.+Joaquim+Aparecido+Bueno+-+Lot.+Remanso+Campineiro%2C+Hortol%C3%A2ndia+-+SP!5e0!3m2!1sen!2sbr!4v1509906983615" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             
                 
             </div>
@@ -281,7 +281,7 @@
             </div>
         </footer>
 
-        
+
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
         <script type="text/javascript" src="js/bootstrap.min.js" ></script>
         <script type="text/javascript" src="js/jquery-1.10.2.js"></script>     
