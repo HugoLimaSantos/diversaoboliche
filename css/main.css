@@ -12,6 +12,13 @@ Text Domain: restaurant
 /*========================
 GLOBAL
 =========================*/
+.space{
+    height: 70px;
+}
+#contato{
+    margin-top: 30px;
+    color: white;
+}
 h1 {
     font-size: 37px;
     font-weight: 900;
@@ -20,7 +27,7 @@ h1 {
     border: 1px solid rgba(47, 46, 47, 0.59);
 }
 .navactive{
-   border-bottom: 1px solid #96E16B;
+   border-bottom: 1px solid rgb(248, 47, 47);
 }
 p.desc-text{
     font-size: 20px;
@@ -161,7 +168,7 @@ h1, h2, p, span, a {
     transition: color 0.3s ease-in-out;
 }
 .color_animation:hover{
-    color: #9BE86F !important;
+    color: rgb(248, 47, 47) !important;
 }
 /*========================
     NAV
@@ -347,7 +354,7 @@ FIRST FOOTER CONTENT
     font-size: 28px;
     font-weight: 900;
     letter-spacing: 0.040em;
-    color: #63C85D;
+    color: rgb(248, 47, 47);
     text-align: center;
     margin: 40px 0 0 0;
 }
@@ -369,7 +376,7 @@ FIRST FOOTER CONTENT
 }
 
 .social_info a:hover {
-    color: #6c8f34;
+    color: rgb(248, 47, 47);
 }
 
 .social_icons {
@@ -394,7 +401,7 @@ FIRST FOOTER CONTENT
 }
 
 .social_icons li a:hover {
-    color: #6c8f34;
+    color: rgb(248, 47, 47);
 }
 
 .direction a{
@@ -538,7 +545,7 @@ p.sub-footer-text a{
     text-align: center;
 }
 .form-btn:hover{
-    background: rgba(85, 184, 120, 1);
+    background: rgb(248, 47, 47);
     color: white;
     border:none;
 }
@@ -664,7 +671,7 @@ MEDIA QUERIES TABLET
         transition: color 0.3s ease-in-out;
     }
     .main-nav a:hover {
-        color: #6c8f34;
+        color: rgb(248, 47, 47);
     }
     .direction a {
         border: 5px solid rgba(0,0,0,0);
@@ -674,7 +681,7 @@ MEDIA QUERIES TABLET
         background-size: 30px; 
     }
     .direction a:hover {
-        border: 5px solid #6D903C;
+        border: 5px solid rgb(248, 47, 47);
     }
 
     /*========================
