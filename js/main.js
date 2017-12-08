@@ -1,5 +1,3 @@
-
-
 	$(document).ready(function () {
 		$(document).on("scroll", onScroll);
  
@@ -36,17 +34,38 @@
 				currentLink.removeClass("navactive");
 			}
 		});
+
+	};
+
+	
+	$(".test_hid").hide();
+
+
+	$(".toggle_efect").click(function() {
+		// Replace class
+		if ($(this).hasClass("glyphicon-menu-down")) {
+			$(this).removeClass("glyphicon glyphicon-menu-down");
+			$(this).addClass("glyphicon glyphicon-menu-up");
+		} else {
+				$(this).removeClass("glyphicon glyphicon-menu-up");
+				$(this).addClass("glyphicon glyphicon-menu-down");
+		}
+
+		$(this).toggleClass("active").next().slideToggle("fast");
+			
+					
+	});
 	
        
-        $(function(){
-            $('#portfolio').mixitup({
-                targetSelector: '.item',
-                transitionSpeed: 250
-            });
-        });
+     $(function(){
+         $('#portfolio').mixitup({
+            targetSelector: '.item',
+            transitionSpeed: 250
+         });
+     });
 
-          $(function() {
-            $( "#datepicker" ).datepicker();
-        });
+      $(function() {
+         $( "#datepicker" ).datepicker();
+   });
     
-    };
+   
