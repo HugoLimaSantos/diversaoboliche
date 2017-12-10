@@ -40,6 +40,7 @@
                             <li><a class="color_animation" href="#story">QUEM SOMOS</a></li>
                             <li><a class="color_animation" href="#pricing">CARDÁPIO</a></li>
                             <li><a class="color_animation" href="#featured">GALERIA</a></li>
+                            <li><a class="color_animation" href="#ranking">RANKING</a></li>
                             <li><a class="color_animation" href="#contato">CONTATO</a></li>
                             <li><a class="color_animation" href="#contact">LOCALIZAÇÃO</a></li>
                         </ul>
@@ -83,7 +84,7 @@
                 <div class="container">
                     <div class="row">
                         <div id="w">
-                        <h2>CARDÁPIO</h2>
+                        <h1>CARDÁPIO</h1>
                         </br>
                         </br>                        
                             <ul id="filter-list" class="clearfix">
@@ -269,6 +270,29 @@
         </section>
 
        <div class="space"></div>
+
+
+      <!-- ============ Featured Ranking  ============= -->
+
+        <section id="ranking" class="description_content">
+           
+            <div class="text-content container"> 
+                
+                    <h1>Ranking</h1>
+                          <table class="table table-bordered">
+                            <thead>
+                               <tr>
+                                    <th>Apelido</th>
+                                    <th>Data do último jogo</th>
+                                    <th>Pontuação Geral</th>
+                                </tr>
+                            </thead>
+                          </table>
+            </div>
+
+        </section>
+
+        <div class="space"></div>
 
         <!-- ============ Social Section  ============= -->
       
