@@ -279,6 +279,7 @@
             <div class="text-content container"> 
                 
                     <h1>Ranking</h1>
+                    <br>
                           <table class="table table-bordered">
                             <thead>
                                <tr>
@@ -287,12 +288,41 @@
                                     <th>Pontuação Geral</th>
                                 </tr>
                             </thead>
-                          </table>
-            </div>
+                          <tbody>
 
+                         <?php
+                               
+                               include 'form/php/conexao.php';
+                               
+                               $cont = 1;
+                               
+                               $result = $conn->query('SELECT * FROM RANKING ORDER BY pontuacao_final DESC');
+                               
+                               if($result){
+
+                                    while ($row = $result->fetch_assoc()){ 
+
+                                            while ($cont <= 10){                                        
+                                                    $id = $row['id_ranking'];
+                                                    echo"<tr><td>".utf8_encode($row['apelido'])."</td><td>".utf8_encode($row['data_jogo'])."</td><td>".$row['pontuacao_final']."</td></tr>";
+                                                    $cont++;
+                                            }
+                                    }
+                                
+                                    $result->free();
+                                
+                                }
+    
+                                $conn->close();
+
+                        ?>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <div class="space"></div>
+
 
         <!-- ============ Social Section  ============= -->
       
