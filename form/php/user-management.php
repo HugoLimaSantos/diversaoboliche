@@ -47,7 +47,6 @@ if($result){
 $conn->close();
 
 ?>
-
     </tbody>
   </table>
 </div>

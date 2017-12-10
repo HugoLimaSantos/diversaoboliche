@@ -169,6 +169,69 @@ $(' .cancel ').click( function (){
 }); 
 
 
+
+////////// Handle press 'Fechar mês' in the ranking.php /////////
+
+    $(' .clean-ranking ').click( function() {
+
+     var confirm_ope = confirm ('Ao fechar o mês será gerado um relatório csv do mesmo e todos os registros da tabela Ranking serão apagados. Deseja realmente fechar o mês?');
+     
+    if (confirm_ope) {
+
+            alert ('Operação realizada com sucesso! Após salvar o arquivo gerado precione f5 para o Reload da página!')
+            window.location.href='clean-ranking.php';
+                        
+   } else {
+
+            event.preventDefault();
+
+   } 
+
+ });
+
+
+
+
+///////// Handle csv export at ranking.php /////////
+
+$(' .ranking-csv ').click( function (){
+    
+            event.preventDefault();
+            window.location.href='export-ranking.php';
+
+}); 
+
+
+////////// Handle calls exclude-ranking.php in the ranking.php /////////////
+
+    $(' .exclude-ranking ').click( function() {
+
+    var ranking_id=($(this).val());
+    var confirm_ope = confirm ('Deseja realmente excluir esse cliente?');
+
+    if (confirm_ope) {
+       return $.ajax({
+        datatype:'Array',
+        type:'post',
+        url:'../php/exclude-ranking.php',
+        data:{ranking_id}, 
+        complete: function(data){
+            console.log (data);	
+            alert('Registro excluído com sucesso!');
+            window.location.href='ranking.php';
+
+        }
+    }); 
+
+   } else {
+
+            event.preventDefault();
+
+   }
+
+ });
+
+
 ///////// Handle calls DataTable function at client management.php ////////
  
  $('#init-filter').DataTable();
