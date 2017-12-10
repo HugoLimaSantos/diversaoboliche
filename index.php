@@ -281,7 +281,7 @@
                     <h1>Ranking</h1>
                     <br>
                           <table class="table table-bordered">
-                            <thead>
+                            <thead id="teste-table">
                                <tr>
                                     <th>Apelido</th>
                                     <th>Data do último jogo</th>
@@ -302,10 +302,14 @@
 
                                     while ($row = $result->fetch_assoc()){ 
 
-                                            while ($cont <= 10){                                        
+                                            if ($cont <= 10){                                        
                                                     $id = $row['id_ranking'];
                                                     echo"<tr><td>".utf8_encode($row['apelido'])."</td><td>".utf8_encode($row['data_jogo'])."</td><td>".$row['pontuacao_final']."</td></tr>";
                                                     $cont++;
+                                            } else {
+
+                                                    break;
+
                                             }
                                     }
                                 
