@@ -279,10 +279,11 @@
             <div class="text-content container"> 
                 
                     <h1>Ranking</h1>
-                    <br>
-                          <table class="table table-bordered">
-                            <thead id="teste-table">
-                               <tr>
+                    <br><br>
+                          <div>
+                          <table class="table table-bordered table-striped table-hover" >
+                            <thead>
+                               <tr style = "background: rgb(248, 47, 47); text-align: center" >
                                     <th>Apelido</th>
                                     <th>Data do último jogo</th>
                                     <th>Pontuação Geral</th>
@@ -322,6 +323,7 @@
                         ?>
                     </tbody>
                 </table>
+              </div>
             </div>
         </section>
 

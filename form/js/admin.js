@@ -207,7 +207,7 @@ $(' .ranking-csv ').click( function (){
     $(' .exclude-ranking ').click( function() {
 
     var ranking_id=($(this).val());
-    var confirm_ope = confirm ('Deseja realmente excluir esse cliente?');
+    var confirm_ope = confirm ('Deseja realmente excluir esse registro?');
 
     if (confirm_ope) {
        return $.ajax({
