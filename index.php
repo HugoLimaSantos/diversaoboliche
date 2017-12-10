@@ -295,18 +295,18 @@
                                
                                include 'form/php/conexao.php';
                                
-                               $cont = 1;
+                               $count = 1;
                                
                                $result = $conn->query('SELECT * FROM RANKING ORDER BY pontuacao_final DESC');
                                
-                               if($result){
-
+                               if(mysqli_num_rows ($result)){
+                                    
                                     while ($row = $result->fetch_assoc()){ 
 
-                                            if ($cont <= 10){                                        
+                                            if ($count <= 10){                                        
                                                     $id = $row['id_ranking'];
                                                     echo"<tr><td>".utf8_encode($row['apelido'])."</td><td>".utf8_encode($row['data_jogo'])."</td><td>".$row['pontuacao_final']."</td></tr>";
-                                                    $cont++;
+                                                    $count++;
                                             } else {
 
                                                     break;
@@ -316,6 +316,10 @@
                                 
                                     $result->free();
                                 
+                                } else {
+
+                                        echo"<tr> <td colspan='3'> Sem informações disponível </td> </tr>";                          
+
                                 }
     
                                 $conn->close();
