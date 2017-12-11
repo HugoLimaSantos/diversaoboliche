@@ -40,6 +40,7 @@
                             <li><a class="color_animation" href="#story">QUEM SOMOS</a></li>
                             <li><a class="color_animation" href="#pricing">CARDÁPIO</a></li>
                             <li><a class="color_animation" href="#featured">GALERIA</a></li>
+                            <li><a class="color_animation" href="#ranking">RANKING</a></li>
                             <li><a class="color_animation" href="#contato">CONTATO</a></li>
                             <li><a class="color_animation" href="#contact">LOCALIZAÇÃO</a></li>
                         </ul>
@@ -83,7 +84,7 @@
                 <div class="container">
                     <div class="row">
                         <div id="w">
-                        <h2>CARDÁPIO</h2>
+                        <h1>CARDÁPIO</h1>
                         </br>
                         </br>                        
                             <ul id="filter-list" class="clearfix">
@@ -269,6 +270,69 @@
         </section>
 
        <div class="space"></div>
+
+
+      <!-- ============ Featured Ranking  ============= -->
+
+        <section id="ranking" class="description_content">
+           
+            <div class="text-content container"> 
+                
+                    <h1>Ranking</h1>
+                    <br><br>
+                          <div>
+                          <table class="table table-bordered table-striped table-hover" >
+                            <thead>
+                               <tr style = "background: rgb(248, 47, 47); text-align: center" >
+                                    <th>Apelido</th>
+                                    <th>Data do último jogo</th>
+                                    <th>Pontuação Geral</th>
+                                </tr>
+                            </thead>
+                          <tbody>
+
+                         <?php
+                               
+                               include 'form/php/conexao.php';
+                               
+                               $count = 1;
+                               
+                               $result = $conn->query('SELECT * FROM RANKING ORDER BY pontuacao_final DESC');
+                               
+                               if(mysqli_num_rows ($result)){
+                                    
+                                    while ($row = $result->fetch_assoc()){ 
+
+                                            if ($count <= 10){                                        
+                                                    $id = $row['id_ranking'];
+                                                    echo"<tr><td>".utf8_encode($row['apelido'])."</td><td>".utf8_encode($row['data_jogo'])."</td><td>".$row['pontuacao_final']."</td></tr>";
+                                                    $count++;
+                                            } else {
+
+                                                    break;
+
+                                            }
+                                    }
+                                
+                                    $result->free();
+                                
+                                } else {
+
+                                        echo"<tr> <td colspan='3'> Sem informações disponível </td> </tr>";                          
+
+                                }
+    
+                                $conn->close();
+
+                        ?>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
 
         <!-- ============ Social Section  ============= -->
       
