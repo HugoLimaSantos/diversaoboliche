@@ -208,66 +208,26 @@
         
         <!-- ============ Featured Gallery  ============= -->
 
-        <section id="featured" class="description_content">
-           
-            <div class="text-content container"> 
-                
-                <div class="col-md-6" >
-                    <h1>Galeria</h1>
-                    <div class="icon-photo fa-2x"></div>
-                    <p class="desc-text">Acompanhe nossa Galeria de Fotos, onde postamos os nossos melhores momentos.</p>
-                    <p class="desc-text">No Diversão Boliche, sua diversão é garantida.</p>
-		                
-                </div>
-
-		        <div class="col-md-6" >
-                    <ul class="image_box_story2">
-                    <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-                    
-			        <?php
-                            $count = 0;
-            	            $path = 'images/gallery/';
-				            $photos = glob("$path{*.jpg,*.JPG,*.png,*.PNG,*.JPEG,*.jpeg}", GLOB_BRACE);
-				            foreach($photos as $img){
-                    
-			        ?>
-                    
-                            <!-- Wrapper for slides -->
-                    <?php if ( $count == 0 ) { 
-                    ?>
-                                                <div class="carousel-inner">
-                                                    <div class="item active">
-                                                        <img src="<?php echo $img; ?>"  alt="..." >
-                                                         <div class="carousel-caption"></div>
-                                                    </div>
-
-				    <?php 
-					} else {
-                    ?>		
-					                                <div class="item">
-                                                        <img src="<?php echo $img; ?>" alt="...">
-                                                        <div class="carousel-caption"></div>
-                                                    </div>
-                    <?php  }
-                            $count++;                       
-                    
+    <section id="featured">
+     </br>    
+            <div class="description_content"><h1>Galeria</h1></div>
+                <div id="img_box">
+                    <?php
+                        $path = 'images/gallery/';
+                        $photos = glob("$path{*.jpg,*.JPG,*.png,*.PNG,*.JPEG,*.jpeg}", GLOB_BRACE);
+                        foreach($photos as $img){
+                    ?> 
+                        <img class="slides" src="<?php echo $img; ?>" alt="">
+                    <?php
                     }
-                ?>			
-                                                </div>
-                                                    <!-- Left and right controls -->
-                                                    <a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
-                                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                                        <span class="sr-only">Previous</span>
-                                                    </a>
-                                                    <a class="right carousel-control" href="#galleryCarousel" data-slide="next">
-                                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                                         <span class="sr-only">Next</span>
-                                                    </a>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                    ?>
+                        <button class="btn" onclick="plusIndex(1)" id="next">&#10095;</button> 
+                        <button class="btn" onclick="plusIndex(-1)" id="prev">&#10094;</button>       
+                </div>              
+
+                    
+    </section>
+
 
        <div class="space"></div>
 
@@ -337,23 +297,24 @@
         <!-- ============ Social Section  ============= -->
       
         <section class="social_connect" id="contato">
-                
-            <div class="text-content container"> 
-                    <h2 id="contato">CONTATO</h2>
-                <div class="col-md-6">
-                    <span class="social_heading">SIGA</span>
-                    <ul class="social_icons">
-                        <li><a class="icon-twitter color_animation" href="#" target="_blank"></a></li>
-                        <li><a class="icon-github color_animation" href="#" target="_blank"></a></li>
-                        <li><a class="icon-linkedin color_animation" href="#" target="_blank"></a></li>
-                        <li><a class="icon-mail color_animation" href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <span class="social_heading">TEL.:</span>
-                    <span class="social_info"><a class="color_animation" >(99) 9999 - 9999</a></span>
-                </div>
+        <div class="text-content container"> 
+        <h2 id="contato">CONTATO</h2>
+            <div class="col-md-6">
+                <span class="social_heading">SIGA</span>
+                <ul class="social_icons">
+                <ul class="social_icons">
+                <li><a class="fa fa-facebook-square" href="#"></a></li>
+                <li><a class="fa fa-instagram" href="#" target="_blank"></a></li>
+    <li><a class="fa fa-twitter" href="#" target="_blank"></a></li>
+                <li><a class="fa fa-envelope" href="#"></a></li>
+            </ul>
+                </ul>
+    </div>
+            <div class="col-md-4">
+                <span class="social_heading">TEL.:</span>
+                <span class="social_info"><a class="color_animation" >(99) 9999 - 9999</a></span>
             </div>
+    </div>
         </section>
 
         <!-- ============ Contact Section  ============= -->
@@ -378,13 +339,49 @@
                 <div class="col-md-4"><p class="sub-footer-text text-center">Built With Care By <a href="#" target="_blank">Us</a></p></div>
             </div>
         </footer>
-
-
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
         <script type="text/javascript" src="js/bootstrap.min.js" ></script>
         <script type="text/javascript" src="js/jquery-1.10.2.js"></script>     
         <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
         <script type="text/javascript" src="js/main.js" ></script>
-
     </body>
+
+    <script>
+
+        var index = 1;
+    
+        showImage(1);
+
+        function plusIndex(n){
+            index = index + n;
+            showImage(index);
+        }
+    
+        function showImage(n){
+            var i;
+            var x = document.getElementsByClassName("slides");
+            if(n>x.length){index = 1};
+            if(n<1){index = x.length};
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display = "none";
+            }   
+            x[index-1].style.display = "block";     
+        }  
+            autoSlide();
+
+        function autoSlide(){
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display = "none";
+            }  
+            if(index > x.length){index = 1}
+            x[index-1].style.display = "block"; 
+            index++;
+            setTimeout(autoSlide, 4000);
+        }
+    </script>
+
 </html>
