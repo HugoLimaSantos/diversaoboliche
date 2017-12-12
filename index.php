@@ -13,9 +13,10 @@
         <link rel="stylesheet" href="css/picto-foundry-food.css" /> <!-- will be erased -->
         <link rel="stylesheet" href="css/jquery-ui.css"> <!--? -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="facebook" content="https://www.facebook.com/openstrike/?ref=br_rs" >
+	<!--<meta name="facebook" content="https://www.facebook.com/openstrike/?ref=br_rs">
 	<meta name="website" content="https://www.openstrike.com.br" >
 	<meta name="keywords" content="Openstrike, restaurante hortolândia, boliche hortolândia, boliche campinas e região, restaurante e boliche hortolândia, entretenimento hortolândia, diversão hortolândia" >	
+     -->  
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link rel="icon" href="logo.jpeg" type="image/x-icon">
     </head>
