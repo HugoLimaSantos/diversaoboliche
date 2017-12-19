@@ -13,6 +13,10 @@
         <link rel="stylesheet" href="css/picto-foundry-food.css" /> <!-- will be erased -->
         <link rel="stylesheet" href="css/jquery-ui.css"> <!--? -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="facebook" content="https://www.facebook.com/openstrike/?ref=br_rs">
+	<meta name="website" content="https://www.openstrike.com.br" >
+	<meta name="keywords" content="Openstrike, restaurante hortolândia, boliche hortolândia, boliche campinas e região, restaurante e boliche hortolândia, entretenimento hortolândia, diversão hortolândia" >	
+     -->  
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link rel="icon" href="logo.jpeg" type="image/x-icon">
     </head>
@@ -40,7 +44,7 @@
                             <li><a class="color_animation" href="#story">QUEM SOMOS</a></li>
                             <li><a class="color_animation" href="#pricing">CARDÁPIO</a></li>
                             <li><a class="color_animation" href="#featured">GALERIA</a></li>
-                            <li><a class="color_animation" href="#ranking">RANKING</a></li>
+			    <li><a class="color_animation" href="#ranking">RANKING</a></li>
                             <li><a class="color_animation" href="#contato">CONTATO</a></li>
                             <li><a class="color_animation" href="#contact">LOCALIZAÇÃO</a></li>
                         </ul>
@@ -84,7 +88,7 @@
                 <div class="container">
                     <div class="row">
                         <div id="w">
-                        <h1>CARDÁPIO</h1>
+                        <h1>Cardápio</h1>
                         </br>
                         </br>                        
                             <ul id="filter-list" class="clearfix">
@@ -199,17 +203,13 @@
                     </div>
                 </div>
             </div>  
-            </br>
-            </br>
-            </br>
-            </br>
+            <div class="space"></div>
         </section>
-
         
-        <!-- ============ Featured Gallery  ============= -->
-
-    <section id="featured">
-     </br>    
+        <!-- ============ Featured Gallery  ============= -->        
+        
+    <section id="featured" >   
+        </br>    
             <div class="description_content"><h1>Galeria</h1></div>
                 <div id="img_box">
                     <?php
@@ -223,18 +223,30 @@
                     ?>
                         <button class="btn" onclick="plusIndex(1)" id="next">&#10095;</button> 
                         <button class="btn" onclick="plusIndex(-1)" id="prev">&#10094;</button>       
-                </div>              
-
-                    
+                </div>                         
     </section>
 
+    <section class="social_connect" id="contato">                
+        <div class="text-content container"> 
+            <h2 id="contato">CONTATO</h2>
+                <div class="col-md-6">
+                    <span class="social_heading">SIGA</span>
+                    <ul class="social_icons">
+                        <li><a class="fa fa-facebook-square" href="https://www.facebook.com/openstrike/?ref=br_rs" target="_blank"></a></li>
+                        <li><a class="fa fa-instagram" href="#" target="_blank"></a></li>
+			<li><a class="fa fa-twitter" href="#" target="_blank"></a></li>
+                        <li><a class="fa fa-envelope" href="#"></a></li>
+                    </ul>
+        </div>
+                <div class="col-md-4">
+                    <span class="social_heading">TEL.:</span>
+                    <span class="social_info"><a class="color_animation" >(99) 9999 - 9999</a></span>
+                </div>
+        </div>
+    </section>
 
-       <div class="space"></div>
-
-
-      <!-- ============ Featured Ranking  ============= -->
-
-        <section id="ranking" class="description_content">
+<!--
+<section id="ranking" class="description_content">
            
             <div class="text-content container"> 
                 
@@ -253,7 +265,7 @@
 
                          <?php
                                
-                               include 'form/php/conexao.php';
+                              /* include 'form/php/conexao.php';
                                
                                $count = 1;
                                
@@ -282,40 +294,14 @@
 
                                 }
     
-                                $conn->close();
+                                $conn->close();*/
 
-                        ?>
+                        ?> 
                     </tbody>
                 </table>
               </div>
             </div>
-        </section>
-
-        <div class="space"></div>
-
-
-        <!-- ============ Social Section  ============= -->
-      
-        <section class="social_connect" id="contato">
-        <div class="text-content container"> 
-        <h2 id="contato">CONTATO</h2>
-            <div class="col-md-6">
-                <span class="social_heading">SIGA</span>
-                <ul class="social_icons">
-                <ul class="social_icons">
-                <li><a class="fa fa-facebook-square" href="#"></a></li>
-                <li><a class="fa fa-instagram" href="#" target="_blank"></a></li>
-    <li><a class="fa fa-twitter" href="#" target="_blank"></a></li>
-                <li><a class="fa fa-envelope" href="#"></a></li>
-            </ul>
-                </ul>
-    </div>
-            <div class="col-md-4">
-                <span class="social_heading">TEL.:</span>
-                <span class="social_info"><a class="color_animation" >(99) 9999 - 9999</a></span>
-            </div>
-    </div>
-        </section>
+        </section>-->
 
         <!-- ============ Contact Section  ============= -->
         
@@ -339,11 +325,15 @@
                 <div class="col-md-4"><p class="sub-footer-text text-center">Built With Care By <a href="#" target="_blank">Us</a></p></div>
             </div>
         </footer>
+
+        
+
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
         <script type="text/javascript" src="js/bootstrap.min.js" ></script>
         <script type="text/javascript" src="js/jquery-1.10.2.js"></script>     
         <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
         <script type="text/javascript" src="js/main.js" ></script>
+
     </body>
 
     <script>
@@ -381,7 +371,7 @@
             x[index-1].style.display = "block"; 
             index++;
             setTimeout(autoSlide, 4000);
-        }
-    </script>
+        } 
 
+    </script>
 </html>
