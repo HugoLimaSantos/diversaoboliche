@@ -144,6 +144,42 @@ $(document).ready(function () {
  });
 
 
+
+///////////////// Handle call client-exclude.php ////////////////
+
+    $(' .exclude-admin ').click( function() {
+
+     //alert($(this).val());
+     var id=($(this).val());
+     var confirm_ope = confirm ('Deseja realmente excluir esse admin?');
+     
+     if (confirm_ope) {
+       return $.ajax({
+          datatype:'Array',
+          type:'post',
+          url:'../php/exclude-admin.php',
+          data:{id}, 
+          
+          complete: function(data){
+            //alert (data);
+            console.log (data);	
+            alert ('Admin excluído da base de dados!')
+            window.location.href='index-admin.php?url=2';
+            
+        }
+           
+    });
+
+   } else {
+
+            event.preventDefault();
+
+   } 
+
+ });
+
+
+
 ///////////////// Handle avoid call update-client.php ////////////////
 
 $(' .confirm_update ').click( function (){

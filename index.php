@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="css/picto-foundry-food.css" /> <!-- will be erased -->
         <link rel="stylesheet" href="css/jquery-ui.css"> <!--? -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="facebook" content="https://www.facebook.com/openstrike/?ref=br_rs" >
+	<meta name="website" content="https://www.openstrike.com.br" >
+	<meta name="keywords" content="Openstrike, restaurante hortolândia, boliche hortolândia, boliche campinas e região, restaurante e boliche hortolândia, entretenimento hortolândia, diversão hortolândia" >	
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link rel="icon" href="logo.jpeg" type="image/x-icon">
     </head>
@@ -40,7 +43,7 @@
                             <li><a class="color_animation" href="#story">QUEM SOMOS</a></li>
                             <li><a class="color_animation" href="#pricing">CARDÁPIO</a></li>
                             <li><a class="color_animation" href="#featured">GALERIA</a></li>
-                            <li><a class="color_animation" href="#ranking">RANKING</a></li>
+			    <li><a class="color_animation" href="#ranking">RANKING</a></li>
                             <li><a class="color_animation" href="#contato">CONTATO</a></li>
                             <li><a class="color_animation" href="#contact">LOCALIZAÇÃO</a></li>
                         </ul>
@@ -48,9 +51,9 @@
                 </div>
             </div><!-- /.container-fluid -->
         </nav>
-         
+
         <div id="top" class="starter_container bg">
-            
+
         </div>
 
         <!-- ============ About Us ============= -->
@@ -79,12 +82,12 @@
 
 
         <section id ="pricing" class="description_content">
-            
+
             <div class="text-content container"> 
                 <div class="container">
                     <div class="row">
                         <div id="w">
-                        <h1>CARDÁPIO</h1>
+                        <h1>Cardápio</h1>
                         </br>
                         </br>                        
                             <ul id="filter-list" class="clearfix">
@@ -92,7 +95,7 @@
                                 <li class="filter" data-filter="food">Lanches</li>
                                 <li class="filter" data-filter="special">Porções</li>
                                 <li class="filter" data-filter="drink">Bebidas</li>
-                               
+
                             </ul><!-- @end #filter-list -->    
                             <ul id="portfolio">
                                 <li class="item food"><img src="images/menu/xegg.jpg" alt="Food" >
@@ -116,7 +119,7 @@
                                   </font>
                                  </div>
                                 </li>
-                                
+
                                 <li class="item food"><img src="images/menu/xsalada.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" >X-Salada</div>
                                 <div class="test_hid" >
@@ -127,7 +130,7 @@
                                   </font>  
                                  </div>
                                 </li>
-                                
+
                                 <li class="item special"><img src="images/menu/salame.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" >Salame</div>
                                 <div class="test_hid" >
@@ -138,7 +141,7 @@
                                  </font>
                                  </div>
                                 </li>                                
-                                
+
                                 <li class="item special"><img src="images/menu/fritas.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" >Fritas</div>
                                 <div class="test_hid" >
@@ -149,7 +152,7 @@
                                   </font>
                                  </div>
                                 </li>
-                                
+
                                 <li class="item drink"><img src="images/menu/refri.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" >Refri</div>
                                 <div class="test_hid" >
@@ -160,7 +163,7 @@
                                  </font>
                                  </div>
                                 </li>
-                                
+
                                 <li class="item drink"><img src="images/menu/cervejas.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" >Cervejas</div>
                                 <div class="test_hid" >
@@ -171,7 +174,7 @@
                                   </font>
                                  </div>
                                 </li>
-                                
+
                                 <li class="item drink"><img src="images/menu/sucos.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" >Sucos</div>
                                 <div class="test_hid" >
@@ -182,7 +185,7 @@
                                    </font>  
                                   </div>
                                 </li>
-                                
+
                                 <li class="item food"><img src="images/menu/xtudo.jpg" alt="Food" >
                                 <div class="toggle_efect glyphicon glyphicon-menu-down" >X-Tudo</div>
                                 <div class="test_hid" >
@@ -199,85 +202,53 @@
                     </div>
                 </div>
             </div>  
-            </br>
-            </br>
-            </br>
-            </br>
+            <div class="space"></div>
         </section>
 
-        
-        <!-- ============ Featured Gallery  ============= -->
+        <!-- ============ Featured Gallery  ============= -->        
 
-        <section id="featured" class="description_content">
-           
-            <div class="text-content container"> 
-                
-                <div class="col-md-6" >
-                    <h1>Galeria</h1>
-                    <div class="icon-photo fa-2x"></div>
-                    <p class="desc-text">Acompanhe nossa Galeria de Fotos, onde postamos os nossos melhores momentos.</p>
-                    <p class="desc-text">No Diversão Boliche, sua diversão é garantida.</p>
-		                
-                </div>
-
-		        <div class="col-md-6" >
-                    <ul class="image_box_story2">
-                    <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-                    
-			        <?php
-                            $count = 0;
-            	            $path = 'images/gallery/';
-				            $photos = glob("$path{*.jpg,*.JPG,*.png,*.PNG,*.JPEG,*.jpeg}", GLOB_BRACE);
-				            foreach($photos as $img){
-                    
-			        ?>
-                    
-                            <!-- Wrapper for slides -->
-                    <?php if ( $count == 0 ) { 
-                    ?>
-                                                <div class="carousel-inner">
-                                                    <div class="item active">
-                                                        <img src="<?php echo $img; ?>"  alt="..." >
-                                                         <div class="carousel-caption"></div>
-                                                    </div>
-
-				    <?php 
-					} else {
-                    ?>		
-					                                <div class="item">
-                                                        <img src="<?php echo $img; ?>" alt="...">
-                                                        <div class="carousel-caption"></div>
-                                                    </div>
-                    <?php  }
-                            $count++;                       
-                    
+    <section id="featured" >   
+        </br>    
+            <div class="description_content"><h1>Galeria</h1></div>
+                <div id="img_box">
+                    <?php
+                        $path = 'images/gallery/';
+                        $photos = glob("$path{*.jpg,*.JPG,*.png,*.PNG,*.JPEG,*.jpeg}", GLOB_BRACE);
+                        foreach($photos as $img){
+                    ?> 
+                        <img class="slides" src="<?php echo $img; ?>" alt="">
+                    <?php
                     }
-                ?>			
-                                                </div>
-                                                    <!-- Left and right controls -->
-                                                    <a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
-                                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                                        <span class="sr-only">Previous</span>
-                                                    </a>
-                                                    <a class="right carousel-control" href="#galleryCarousel" data-slide="next">
-                                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                                         <span class="sr-only">Next</span>
-                                                    </a>
-                        </div>
-                    </ul>
+                    ?>
+                        <button class="btn" onclick="plusIndex(1)" id="next">&#10095;</button> 
+                        <button class="btn" onclick="plusIndex(-1)" id="prev">&#10094;</button>       
+                </div>                         
+    </section>
+
+    <section class="social_connect" id="contato">                
+        <div class="text-content container"> 
+            <h2 id="contato">CONTATO</h2>
+                <div class="col-md-6">
+                    <span class="social_heading">SIGA</span>
+		     <ul class="social_icons">
+                        <li><a class="fa fa-facebook-square" href="https://www.facebook.com/openstrike/?ref=br_rs" target="_blank"></a></li>
+                        <li><a class="fa fa-instagram" href="#" target="_blank"></a></li>
+			<li><a class="fa fa-twitter" href="#" target="_blank"></a></li>
+                        <li><a class="fa fa-envelope" href="#"></a></li>
+                    </ul> 
+        </div>
+                <div class="col-md-4">
+                    <span class="social_heading">TEL.:</span>
+                    <span class="social_info"><a class="color_animation" >(99) 9999 - 9999</a></span>
                 </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-       <div class="space"></div>
+<!--
+<section id="ranking" class="description_content">
 
-
-      <!-- ============ Featured Ranking  ============= -->
-
-        <section id="ranking" class="description_content">
-           
             <div class="text-content container"> 
-                
+
                     <h1>Ranking</h1>
                     <br><br>
                           <div>
@@ -292,15 +263,15 @@
                           <tbody>
 
                          <?php
-                               
-                               include 'form/php/conexao.php';
-                               
+
+                              /* include 'form/php/conexao.php';
+
                                $count = 1;
-                               
+
                                $result = $conn->query('SELECT * FROM RANKING ORDER BY pontuacao_final DESC');
-                               
+
                                if(mysqli_num_rows ($result)){
-                                    
+
                                     while ($row = $result->fetch_assoc()){ 
 
                                             if ($count <= 10){                                        
@@ -313,58 +284,33 @@
 
                                             }
                                     }
-                                
+
                                     $result->free();
-                                
+
                                 } else {
 
                                         echo"<tr> <td colspan='3'> Sem informações disponível </td> </tr>";                          
 
                                 }
-    
-                                $conn->close();
 
-                        ?>
+                                $conn->close();*/
+
+                        ?> 
                     </tbody>
                 </table>
               </div>
             </div>
-        </section>
-
-        <div class="space"></div>
-
-
-        <!-- ============ Social Section  ============= -->
-      
-        <section class="social_connect" id="contato">
-                
-            <div class="text-content container"> 
-                    <h2 id="contato">CONTATO</h2>
-                <div class="col-md-6">
-                    <span class="social_heading">SIGA</span>
-                    <ul class="social_icons">
-                        <li><a class="icon-twitter color_animation" href="#" target="_blank"></a></li>
-                        <li><a class="icon-github color_animation" href="#" target="_blank"></a></li>
-                        <li><a class="icon-linkedin color_animation" href="#" target="_blank"></a></li>
-                        <li><a class="icon-mail color_animation" href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <span class="social_heading">TEL.:</span>
-                    <span class="social_info"><a class="color_animation" >(99) 9999 - 9999</a></span>
-                </div>
-            </div>
-        </section>
+        </section>-->
 
         <!-- ============ Contact Section  ============= -->
-        
+
         <section id="contact">
             <div class="space"></div>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1838.183397009771!2d-47.215621!3d-22.862905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc00393cd5c3%3A0x5a04b521d499d7d3!2sR.+Joaquim+Aparecido+Bueno+-+Lot.+Remanso+Campineiro%2C+Hortol%C3%A2ndia+-+SP!5e0!3m2!1sen!2sbr!4v1509906983615" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-            
-                
+
+
             </div>
         </section>
 
@@ -380,6 +326,7 @@
         </footer>
 
 
+
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
         <script type="text/javascript" src="js/bootstrap.min.js" ></script>
         <script type="text/javascript" src="js/jquery-1.10.2.js"></script>     
@@ -387,4 +334,43 @@
         <script type="text/javascript" src="js/main.js" ></script>
 
     </body>
-</html>
+
+    <script>
+
+        var index = 1;
+
+        showImage(1);
+
+        function plusIndex(n){
+            index = index + n;
+            showImage(index);
+        }
+
+        function showImage(n){
+            var i;
+            var x = document.getElementsByClassName("slides");
+            if(n>x.length){index = 1};
+            if(n<1){index = x.length};
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display = "none";
+            }   
+            x[index-1].style.display = "block";     
+        }  
+            autoSlide();
+
+        function autoSlide(){
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display = "none";
+            }  
+            if(index > x.length){index = 1}
+            x[index-1].style.display = "block"; 
+            index++;
+            setTimeout(autoSlide, 4000);
+        } 
+
+    </script>
+</html> 

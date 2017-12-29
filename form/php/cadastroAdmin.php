@@ -9,6 +9,15 @@ if((!isset ($_COOKIE['logi']) == true) )
 ?>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+
+    .root {
+        margin-top: -2px;
+        margin-left: -14px;
+    }
+
+</style>
+
 
 <div class="modal-content">
      <div class="modal-header">
@@ -19,6 +28,15 @@ if((!isset ($_COOKIE['logi']) == true) )
 	 <div class="modal-body">
 
       <form class="form col-md-12 center-block" method = "POST" action = "cadastro.php">
+      
+      <div class="form-group col-sm-2 root">
+          <label for="root">Privilégios de root</label>
+          <select id="root" class="form-control" name="root">
+                <option value="não">não</option>
+                <option value="sim">sim</option>
+          </select>
+      </div>
+      
       <div class="form-group">
         <input type = "email" class = "form-control input-lg" name = "logi" maxlength="100" placeholder = "Email">
       </div>
@@ -40,7 +58,7 @@ if((!isset ($_COOKIE['logi']) == true) )
 
  <div class="col-md-12">
    <button class="btn" data-dismiss="modal" aria-hidden="true" onclick= "window.location.href='index-admin.php'">Cancelar</button>
-   </div> 
-  </div>
+</div> 
+</div>
 
 </div>
